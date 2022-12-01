@@ -9,10 +9,15 @@
     <title>Document</title>
   </head>
   <body>
+    <input type="text"  id="one" />
+    <input type="text"  id="two" />
+    <p id="three"></p>
     <input type="button" onclick="myFunction()" value="Submit" />
     <script>
       function myFunction() {
-        alert("You clicked a button");
+          let p1=document.getElementById("one").value
+          let p2=document.getElementById("two").value
+          document.getElementById("three").innerHTML=p1*p2
       }
     </script>
   </body>
